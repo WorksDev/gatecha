@@ -1,0 +1,4 @@
+name: itw/gatecha
+label: 'GateCHA spam protection'
+dependencies:
+  - typo3/form

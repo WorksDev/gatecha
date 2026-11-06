@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.2">
+    <file source-language="en" datatype="plaintext" original="messages" product-name="gatecha">
+        <header/>
+        <body>
+            <trans-unit id="element.label"><source>Spam protection (GateCHA)</source></trans-unit>
+            <trans-unit id="error.missing"><source>Please confirm that you are not a robot.</source></trans-unit>
+            <trans-unit id="error.invalid"><source>The spam check failed. Please confirm again that you are not a robot.</source></trans-unit>
+            <trans-unit id="error.expired"><source>The spam check has expired. Please confirm again that you are not a robot.</source></trans-unit>
+            <trans-unit id="error.botSuspected"><source>Your submission was classified as automated. Please try again or contact us by phone.</source></trans-unit>
+            <trans-unit id="error.unavailable"><source>The spam check is currently unavailable. Please try again later.</source></trans-unit>
+        </body>
+    </file>
+</xliff>

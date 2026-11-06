@@ -1,0 +1,60 @@
+categories:
+  gatecha:
+    label: 'GateCHA'
+
+settings:
+  gatecha.url:
+    label: 'GateCHA server'
+    description: 'Base URL without trailing slash, e.g. https://gatecha.example.com'
+    category: gatecha
+    type: string
+    default: ''
+  gatecha.apiKey:
+    label: 'API key (gk_…)'
+    description: 'Public key from the GateCHA dashboard. It is part of the HTML; protect it with the domain restriction of the key.'
+    category: gatecha
+    type: string
+    default: ''
+  gatecha.his:
+    label: 'Send Human Interaction Signals (HIS)'
+    description: 'Loads his.js from the GateCHA server and forwards the signals on verification. Required for "Block suspected bots".'
+    category: gatecha
+    type: bool
+    default: true
+  gatecha.failOpen:
+    label: 'Accept forms if GateCHA is unreachable'
+    description: 'Off: forms are rejected while GateCHA cannot be reached. On: forms are accepted without verification.'
+    category: gatecha
+    type: bool
+    default: false
+  gatecha.timeout:
+    label: 'Verification timeout (seconds)'
+    category: gatecha
+    type: int
+    default: 5
+  gatecha.type:
+    label: 'Widget type'
+    category: gatecha
+    type: string
+    default: 'checkbox'
+  gatecha.display:
+    label: 'Widget display'
+    category: gatecha
+    type: string
+    default: 'standard'
+    enum:
+      standard: 'Inline'
+      floating: 'Floating (at the submit button)'
+      overlay: 'Overlay'
+      bar: 'Bar at the edge of the screen'
+      invisible: 'Invisible'
+  gatecha.hideLogo:
+    label: 'Hide ALTCHA logo'
+    category: gatecha
+    type: bool
+    default: true
+  gatecha.hideFooter:
+    label: 'Hide ALTCHA footer'
+    category: gatecha
+    type: bool
+    default: true

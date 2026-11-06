@@ -1,0 +1,38 @@
+{
+    "name": "itw/gatecha",
+    "type": "typo3-cms-extension",
+    "description": "GateCHA (self-hosted ALTCHA) spam protection for TYPO3 EXT:form: direct challenge, server-side verification, Human Interaction Signals (HIS)",
+    "license": ["GPL-2.0-or-later"],
+    "version": "14.0.0",
+    "require": {
+        "php": "^8.4",
+        "typo3/cms-core": "^14.3",
+        "typo3/cms-extbase": "^14.3",
+        "typo3/cms-fluid": "^14.3",
+        "typo3/cms-form": "^14.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^13",
+        "saschaegerer/phpstan-typo3": "^3",
+        "ssch/typo3-rector": "^3",
+        "typo3/coding-standards": "^0.9",
+        "a9f/typo3-fractor": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Itw\\Gatecha\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "gatecha"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "typo3/class-alias-loader": true,
+            "typo3/cms-composer-installers": true,
+            "a9f/fractor-extension-installer": true
+        }
+    }
+}
